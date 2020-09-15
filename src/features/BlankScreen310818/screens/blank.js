@@ -22,7 +22,7 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = { Datepicker_3: new Date("09/15/2020") }
+  state = { Datepicker_3: new Date("09/15/2020"), Input_4: "" }
 
   render = () => (
     <View
@@ -111,6 +111,7 @@ export class _Blank extends React.Component {
           paddingTop: 5,
           paddingBottom: 5,
           overflow: "visible",
+          alignSelf: "center",
           fontSize: 12,
           color: "#000000",
           backgroundColor: "#ffffff",
@@ -132,6 +133,48 @@ export class _Blank extends React.Component {
         }}
         date={this.state.Datepicker_3}
         onSelect={nextValue => this.setState({ Datepicker_3: nextValue })}
+      />
+      <Input
+        placeholder="Sample text input placeholder"
+        editable={true}
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontFamily: "Roboto-Regular"
+        }}
+        style={{
+          width: "100%",
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          fontSize: 12,
+          color: "#000000",
+          backgroundColor: "#ffffff",
+          fontFamily: "Roboto-Regular",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        value={this.state.Input_4}
+        onChangeText={nextValue => this.setState({ Input_4: nextValue })}
       />
     </View>
   )
