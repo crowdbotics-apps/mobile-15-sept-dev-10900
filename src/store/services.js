@@ -27,6 +27,24 @@ function api_v1_homepage_update(requestBody) {
 function api_v1_homepage_partial_update(requestBody) {
   return mobile15septAPI.patch(`/api/v1/homepage/{id}/`, requestBody)
 }
+function api_v1_jhghjgj_list() {
+  return mobile15septAPI.get(`/api/v1/jhghjgj/`)
+}
+function api_v1_jhghjgj_create(requestBody) {
+  return mobile15septAPI.post(`/api/v1/jhghjgj/`, requestBody)
+}
+function api_v1_jhghjgj_read() {
+  return mobile15septAPI.get(`/api/v1/jhghjgj/{id}/`)
+}
+function api_v1_jhghjgj_update(requestBody) {
+  return mobile15septAPI.put(`/api/v1/jhghjgj/{id}/`, requestBody)
+}
+function api_v1_jhghjgj_partial_update(requestBody) {
+  return mobile15septAPI.patch(`/api/v1/jhghjgj/{id}/`, requestBody)
+}
+function api_v1_jhghjgj_delete() {
+  return mobile15septAPI.delete(`/api/v1/jhghjgj/{id}/`)
+}
 function api_v1_login_create() {
   return mobile15septAPI.post(`/api/v1/login/`)
 }
@@ -78,6 +96,12 @@ export const apiService = {
   api_v1_homepage_read,
   api_v1_homepage_update,
   api_v1_homepage_partial_update,
+  api_v1_jhghjgj_list,
+  api_v1_jhghjgj_create,
+  api_v1_jhghjgj_read,
+  api_v1_jhghjgj_update,
+  api_v1_jhghjgj_partial_update,
+  api_v1_jhghjgj_delete,
   api_v1_login_create,
   api_v1_signup_create,
   rest_auth_login_create,
