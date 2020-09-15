@@ -7,15 +7,9 @@ from django.db import models
 
 
 class CustomText(models.Model):
-    title = models.CharField(
+    titlejhgjhgjfhg = models.CharField(
         max_length=150,
-    )
-    kjhjkhj = models.ForeignKey(
-        "users.User",
-        null=True,
         blank=True,
-        on_delete=models.CASCADE,
-        related_name="customtext_kjhjkhj",
     )
 
     def __str__(self):
