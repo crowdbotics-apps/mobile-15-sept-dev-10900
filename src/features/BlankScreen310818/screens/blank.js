@@ -22,7 +22,10 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = { Datepicker_3: new Date("09/15/2020"), Input_4: "" }
+  state = {
+    Datepicker_3: new Date("09/15/2020"),
+    Input_4: "hgfhfhgf hgfhg fhgf"
+  }
 
   render = () => (
     <View
@@ -111,7 +114,7 @@ export class _Blank extends React.Component {
           paddingTop: 5,
           paddingBottom: 5,
           overflow: "visible",
-          alignSelf: "center",
+          alignSelf: "flex-end",
           fontSize: 12,
           color: "#000000",
           backgroundColor: "#ffffff",
@@ -154,6 +157,7 @@ export class _Blank extends React.Component {
           paddingTop: 5,
           paddingBottom: 5,
           overflow: "visible",
+          alignSelf: "center",
           fontSize: 12,
           color: "#000000",
           backgroundColor: "#ffffff",
