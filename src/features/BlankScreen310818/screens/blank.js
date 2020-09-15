@@ -24,7 +24,11 @@ export class _Blank extends React.Component {
 
   state = {
     Datepicker_3: new Date("09/15/2020"),
-    Input_4: "hgfhfhgf hgfhg fhgf"
+    Input_4: "hgfhfhgf hgfhg fhgf",
+    Input_7: "",
+    Input_8: "",
+    Toggle_9: true,
+    Input_10: ""
   }
 
   render = () => (
@@ -179,6 +183,271 @@ export class _Blank extends React.Component {
         }}
         value={this.state.Input_4}
         onChangeText={nextValue => this.setState({ Input_4: nextValue })}
+      />
+      <Button
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "center",
+          fontFamily: "Roboto-Regular"
+        }}
+        style={{
+          width: "100%",
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          fontSize: 12,
+          color: "#000000",
+          backgroundColor: "#3366FF",
+          fontFamily: "Roboto-Regular",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "center",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        onPress={() => alert("Pressed!")}
+      >
+        Press me!
+      </Button>
+      <Text
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          fontSize: 12,
+          color: "#000000",
+          backgroundColor: "#ffffff",
+          fontFamily: "Roboto-Regular",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+      >
+        Sample text content
+      </Text>
+      <Input
+        placeholder="Number Input Placeholder"
+        editable={true}
+        keyboardType="numeric"
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontFamily: "Roboto-Regular"
+        }}
+        style={{
+          width: "100%",
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          fontSize: 12,
+          color: "#000000",
+          backgroundColor: "#ffffff",
+          fontFamily: "Roboto-Regular",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        value={this.state.Input_7}
+        onChangeText={nextValue => this.setState({ Input_7: nextValue })}
+      />
+      <Input
+        placeholder="Sample text input placeholder"
+        editable={true}
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontFamily: "Roboto-Regular"
+        }}
+        style={{
+          width: "100%",
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          fontSize: 12,
+          color: "#000000",
+          backgroundColor: "#ffffff",
+          fontFamily: "Roboto-Regular",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        value={this.state.Input_8}
+        onChangeText={nextValue => this.setState({ Input_8: nextValue })}
+      />
+      <Toggle
+        text="switch ON/OFF"
+        activeColor="#409EFF"
+        inactiveColor="#C0CCDA"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        checked={this.state.Toggle_9}
+        onChange={nextChecked => this.setState({ Toggle_9: nextChecked })}
+      />
+      <Input
+        placeholder="Sample text input placeholder"
+        editable={true}
+        multiline={true}
+        textStyle={{
+          height: 100,
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontFamily: "Roboto-Regular"
+        }}
+        style={{
+          width: "100%",
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          fontSize: 12,
+          color: "#000000",
+          backgroundColor: "#ffffff",
+          fontFamily: "Roboto-Regular",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        value={this.state.Input_10}
+        onChangeText={nextValue => this.setState({ Input_10: nextValue })}
+      />
+      <Slider
+        value={50}
+        minimumValue={0}
+        maximumValue={100}
+        step={1}
+        disabled={false}
+        maximumTrackTintColor="#E4E7ED"
+        minimumTrackTintColor="#3366FF"
+        thumbTintColor="#3366FF"
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0
+        }}
       />
     </View>
   )
